@@ -1,0 +1,170 @@
+﻿@{
+    var lng = ViewContext.RouteData.Values["lang"].ToString();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RefinDEPOT | Eğitimin Her Aşamasında RefinDEPOT</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="icon" type="image/png" href="~/assets/images/favicon.png">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <script src="~/assets/script/jquery.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="~/assets/style/style.css?v=2" />
+
+    <link rel="stylesheet" type="text/css" href="~/assets/style/custom.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="~/assets/style/mobile.css?v=2" />
+
+    <link rel="stylesheet" type="text/css" href="~/assets/font-awesome/css/all.css?v=2" />
+    <link rel="stylesheet" href="~/assets/bxslider/css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/owl-carousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="~/assets/style/style-custom.css"/>
+
+</head>
+<body>
+
+    @Html.Partial("_Header")
+    <div id="main">
+        @RenderBody()
+    </div>
+
+    <footer id="main-footer">
+        <div id="blur-top">
+            <a href="javascript:void(0);" id="link-back-top">@(lng=="tr"? "YUKARI":"BACK TO TOP")</a>
+        </div>
+
+        <div id="footer-copyright">
+            <div id="footer-copyright-content" class="clearfix">
+                <a href="/tr" id="logo-footer"><img src="../assets/images/logo-footer.svg" alt="" /></a>
+                <ul id="nav-footer">
+                    <li class="@Html.IsSelected(controller: "main")">
+                        @Ajax.RawActionLink((string)www.refindepot.com.lib.config.get_lang(lng).nav.home, "index", "main",
+                                                new { lang = lng },
+                                                new AjaxOptions
+                                                {
+                                                    HttpMethod = "Post",
+                                                    InsertionMode = InsertionMode.Replace,
+                                                    UpdateTargetId = "main",
+                                                    OnBegin = "url_rw('/" + lng + "/', '" + www.refindepot.com.lib.config.get_lang(lng).nav.home + "');loading_start('main');",
+                                                    OnComplete = "loading_stop('main')"
+                                                },
+                                                new
+                                                {
+                                                    @class = "current-menu-item"
+                                                })
+                    </li>
+                    <li class="@Html.IsSelected(controller: "refindepot")">
+                        @Ajax.RawActionLink((string)www.refindepot.com.lib.config.get_lang(lng).nav.reference_letter, "index", "refindepot",
+                                               new { lang = lng },
+                                               new AjaxOptions
+                                               {
+                                                   HttpMethod = "Post",
+                                                   InsertionMode = InsertionMode.Replace,
+                                                   UpdateTargetId = "main",
+                                                   OnBegin = "url_rw('/" + lng + "/refindepot/', '" + www.refindepot.com.lib.config.get_lang(lng).nav.reference_letter + "');",
+                                                   OnComplete = "loading_stop('main')"
+                                               },
+                                               new
+                                               {
+                                                   @class = ""
+                                               })
+                    </li>
+                    <li class="@Html.IsSelected(controller: "resume")">
+                        @Ajax.RawActionLink((string)www.refindepot.com.lib.config.get_lang(lng).nav.resume, "index", "resume",
+                                               new { lang = lng },
+                                               new AjaxOptions
+                                               {
+                                                   HttpMethod = "Post",
+                                                   InsertionMode = InsertionMode.Replace,
+                                                   UpdateTargetId = "main",
+                                                   OnBegin = "url_rw('/" + lng + "/resume/', '" + www.refindepot.com.lib.config.get_lang(lng).nav.resume + "');",
+                                                   OnComplete = "loading_stop('main')"
+                                               },
+                                               new
+                                               {
+                                                   @class = ""
+                                               })
+                    </li>
+                    <li>
+                        @Ajax.RawActionLink((string)www.refindepot.com.lib.config.get_lang(lng).nav.contact, "index", "contact",
+                                                     new { lang = lng },
+                                                     new AjaxOptions
+                                                     {
+                                                         HttpMethod = "Get",
+                                                         InsertionMode = InsertionMode.Replace,
+                                                         UpdateTargetId = "main",
+                                                         OnBegin = "url_rw('/" + lng + "/contact/', '" + www.refindepot.com.lib.config.get_lang(lng).nav.contact + "');",
+                                                         OnComplete = "loading_stop('main')"
+                                                     },
+                                                     new
+                                                     {
+                                                         @class = ""
+                                                     })
+                    </li>
+                </ul>
+                <p id="text-copyright">Copyright &copy; 2019. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/assets/script/jquery-ui.js" type="text/javascript"></script>
+    <script src="~/assets/script/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="~/assets/script/scripts.js?v=2" type="text/javascript"></script>
+    <script src="~/assets/bxslider/js/jquery.bxslider.js" type="text/javascript"></script>
+    <script src="~/assets/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="~/assets/script/jquery-cookie/jquery-cookie.js"></script>
+    <script src="~/assets/script/jquery.unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/assets/script/jquery.validation/jquery.validation.js"></script>
+    <script src="~/assets/script/i18next/i18next.min.js"></script>
+    @*<script>
+            $(document).ready(function () {
+
+                $('.bxslider').bxSlider({
+                    startSlide: 0,
+                    randomStart: false,
+                    auto: true,
+                    stopAutoOnClick: true,
+                    pager: true,
+                    useCSS: false
+
+
+                });
+
+                function sliderBullet() {
+                    $(".bx-pager-item").css("border-color", "#7a1632");
+                    $(".bx-pager-item:has(.active)").css("border-color", "#fff");
+                }
+
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
+                    }
+                });
+
+                $(".bxslider div").fadeToggle("slow");
+
+            });
+        </script>*@
+</body>
+</html>

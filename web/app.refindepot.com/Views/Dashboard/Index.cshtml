@@ -1,0 +1,198 @@
+﻿@{
+    var user = utils.session.helper.get_user(HttpContext.Current);
+}
+<style>
+    .vl {
+        border-left: 1px solid gray;
+        height: 100%;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-9">
+                <div class="row career-sites-row">
+
+                    <div class="col-md-3 career-sites-column">
+                        <div class="widget bg-widget-color-1">
+                            <div class="career-sites-heading">
+                                <img src="~/img/linkedin.png" class="img-responsive" />
+                            </div>
+                            <img src="~/img/linkedin_image.jpg" class="img-responsive" />
+                            <div class="ibox-content bg-widget-color-1 ">
+                                Global bağlamda en fazla kullanılan ve en etkin profesyonel ağlarından biri olan Linkedin’de güçlü bir profil oluşturmaya henüz daha öğrencilik hayatındayken başlayın ve deneyimlerinizle işverenlerin dikkatini çekin.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 career-sites-column">
+                        <div class="widget bg-widget-color-1">
+                            <div class="career-sites-heading">
+                                <img src="~/img/glassdoor.png" class="img-responsive" />
+                            </div>
+                            <img src="~/img/glassdoor_image.png" class="img-responsive" />
+                            <div class="ibox-content bg-widget-color-1">
+                                Global bağlamda iş imkanlarını takip edebileceğiniz profesyonel ağlardan biri olan Glassdoor’da hem iş arayabilir hem de iş imkanlarını sunan firmalar hakkındaki görüşleri öğrenebilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 career-sites-column">
+                        <div class="widget bg-widget-color-1">
+                            <div class="career-sites-heading">
+                                <img src="~/img/indeed.png" class="img-responsive" />
+                            </div>
+                            <img src="~/img/indeed_image.png" class="img-responsive" />
+                            <div class="ibox-content bg-widget-color-1">
+                                Indeed ile sadece iş arama fırsatı değil aynı zamanda ücretsiz özgeçmiş oluşturabilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 career-sites-column">
+                        <div class="widget bg-widget-color-1">
+                            <div class="career-sites-heading">
+                                <img src="~/img/workestonia.png" class="img-responsive" />
+                            </div>
+                            <img src="~/img/workestonia_image.png" class="img-responsive" />
+                            <div class="ibox-content bg-widget-color-1">
+                                Teknolojisi ile ünlü ülkelerden biri olan Estonya’daki çeşitli iş imkanları için Work in Estonia’yı incelemeyi ihmal etmeyin.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="widget style1 navy-bg">
+                            <h2> DUYURULAR</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 ">
+                        <div class="widget style1 ferhatwidget">
+                            <a href="#">
+                                <h3 class="m-b-xs" style="color:black;"><strong>Universum Kariyer Anketi</strong></h3> <br />
+                                <img alt="image" src="/userfiles/notice/duyuru1.png" height="100%" width="100%" />
+                            </a>
+                            <div class="contact-box-footer">
+                                <div class="m-t-xs btn-group">
+                                    <a href="" class="btn btn-xs btn-white "><i class="fa fa-newspaper-o"></i> Duyuru Detayı >> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 ">
+                        <div class="widget style1 ferhatwidget">
+                            <a href="#">
+                                <h3 class="m-b-xs" style="color:black;"><strong>Duyuru - 2</strong></h3> <br />
+                                <img alt="image" src="/userfiles/notice/duyuru1.png" height="100%" width="100%" />
+
+                            </a>
+                            <div class="contact-box-footer">
+                                <div class="m-t-xs btn-group">
+                                    <a href="" class="btn btn-xs btn-white "><i class="fa fa-newspaper-o"></i> Duyuru Detayı >> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 hidden-xs hidden-sm">
+                <div class="row">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-lg-3">
+                                <i class="fa fa-user-o fa-5x"></i>
+                            </div>
+                            <div class="col-lg-9 text-right">
+                                <h3 class="font-bold">@user.name</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <small> @user.email</small>
+                                    </li>
+                                    <li>
+                                        <small>  @user.uname</small>
+                                    </li>
+                                    <small>
+                                        <li data-i18n="enums.@user.type">
+                                            @user.type
+
+                                        </li>
+                                    </small>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="widget style1 ferhatwidget">
+                        <div class="row vertical-align" style="padding-left:6px;padding-right:6px;">
+                            <img src="~/img/aiesec.png" />
+                            <hr class="ferhathr"/>
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <img src="~/img/aisec_image.png" width="100%" height="100%" />
+                            </div>
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <p lang="tr-TR">
+                                    Ülkelerarası kültürel anlayışı desteklemek amacıyla kurulmuş olan ve bugün 120 den fazla ülkede faaliyet gösteren Aisec gençlere dünya vatandaşı olma fırsatı sunmakta. Dünya’nın lider yetiştiren bu en büyük gençlik organizayonundaki staj imkanlarını kaçırmayın!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="~/img/global.png" width="100%" height="100%" />
+                    </div>
+                    <div class="widget style1 ferhatwidget">
+                        <div class="row vertical-align" style="padding-left:6px;padding-right:6px;">
+                            <img src="~/img/britishcouncil.png" />
+                            <hr class="ferhathr"/>
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <img src="~/img/britishcouncil_image.png" width="100%" height="100%" />
+                            </div>
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <p lang="tr-TR">
+                                    British Council sitesinde gençler için pekçok önemli bilgiler mevcut. İngiliz Üniversitelerinin sundukları burslar hakkında bilgilendirmeler, çeşitli yaş gruplarına ve çeşitli bilgi bilgi seviyelerine hitap eden, iş ingilizcesini dahi içeren ücretsiz İngilizce öğrenme mateyalleri ve uluslararası İngilizce sınavı IELTS hakkında detaylı bilgilendirmeler ve sınava başvuru için British Council web sitesini ziyaret edin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget style1 ferhatwidget">
+                        <div class="row vertical-align" style="padding-left:6px;padding-right:6px;">
+                            <img src="~/img/collegeboard.png" />
+                            <hr class="ferhathr" />
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <img src="~/img/collegeboard_image.png" width="100%" height="100%" />
+                            </div>
+                            <div class="col-lg-6 ferhatcol-lg-6">
+                                <p lang="tr-TR">
+                                    Lise öğrencileri için Collegeboard altın değerinde bir kaynak. Üniversitede okunan anadallar nelerdir ve bu bölümlerden mezun olduğumda hangi kariyerler beni bekler. Neden hoşlanıyorsunuz bulun Collegeboard “Explore Career “ sayfasında ve ilgi alanınızla örtüşen anadalları bulun ve o anadallara hazır olmak için ne tür bir donanım sahibi olmalısınız, o anadaldan mezun olduğunuzda hangi kariyerler sizi bekliyor, hepsi collegeboard’da
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-lg-1 hidden-sm hidden-xs"></div>*@
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(document).i18n();
+        //$('.slick_demo_3').slick({
+        //    //dots: true,
+        //    infinite: true,
+        //    speed: 500,
+        //    fade: true,
+        //    cssEase: 'linear',
+        //    adaptiveHeight: true,
+        //    autoplay: true,
+        //    autoplaySpeed: 2000,
+        //    prevArrow: false,
+        //    nextArrow: false
+        //});
+    });
+
+</script>

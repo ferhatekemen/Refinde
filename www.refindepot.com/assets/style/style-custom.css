@@ -1,0 +1,18 @@
+﻿
+
+#nav-sidebar li a img {
+    width:100%;
+    height:100%
+}
+
+
+#nav-sidebar li a figure {
+    border-radius: 50%;
+    padding: 0px;
+    width: 92px;
+    height: 92px;
+}
+
+.testimonial-title {
+    padding-left:15px !important;
+}
