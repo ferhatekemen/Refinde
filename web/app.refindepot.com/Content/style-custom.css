@@ -2,7 +2,7 @@
 
 /*****************************/
     
-.career-sites-heading {
+.ferhatcareer-sites-heading {
 
     padding-bottom: 5px;
     margin-bottom: 12px;
@@ -10,12 +10,12 @@
 }
 
 
-.career-sites-row{
+.ferhatcareer-sites-row{
     margin-left:0px;
-    margin-right:0px;
+    margin-right:0px;   
 }
 
-.career-sites-column {
+.ferhatcareer-sites-column {
     /*summernote.css
     padding-left: 15px;*/
     padding-left: 2px;
@@ -25,70 +25,70 @@
 
 @media (min-width: 700px) {
 
-    .career-sites-row {
+    .ferhatcareer-sites-row {
         display: flex;
         flex-wrap: wrap
     }
 
-    .career-sites-column {
+    .ferhatcareer-sites-column {
         width: 50%;
     }
 }
 
 @media (min-width: 992px) {
 
-    .career-sites-column {
+    .ferhatcareer-sites-column {
         width: 25%;
     }
 }
 
-.bg-widget-color-1 {
-    background-color: #eceded;
+.ferhatbg-widget-color-1 {
+    background-color: #e5e5e6;
     padding-right:10px;
     padding-left:10px;
 }
 
 
 @media (min-width: 700px) {
-    .bg-widget-color-1 {
+    .ferhatbg-widget-color-1 {
         min-height: 150px
     }
 }
 
 @media (min-width: 850px) {
-    .bg-widget-color-1 {
+    .ferhatbg-widget-color-1 {
         min-height: 115px
     }
 }
 
     
 @media (min-width: 992px) {
-    .bg-widget-color-1 {
+    .ferhatbg-widget-color-1 {
         min-height: 205px
     }
 }
 
 @media (min-width: 1110px) {
-    .bg-widget-color-1 {
+    .ferhatbg-widget-color-1 {
         min-height: 170px
     }
 }
 
 
 @media (min-width: 1200px) {
-    .bg-widget-color-1{
+    .ferhatbg-widget-color-1{
         min-height:205px
     }
 }
 
 @media (min-width: 1300px) {
-    .bg-widget-color-1 {
+    .ferhatbg-widget-color-1 {
         min-height: 170px
     }
 }
 
 
-.ibox-content {
+.ferhatibox-content {
     /*style.css
     padding: 15px 20px 20px 20px;
     /*background-color: #ffffff;*/
@@ -118,11 +118,11 @@ margin-bottom:10px
 }
 
 .ferhatwidget{
-    background-color:#eceded;
+    background-color:#e5e5e6;
 }
 
 @media (min-width: 700px) {
-    .skin-1 .wrapper-content {
+    .skin-1 .ferhatwrapper-content {
         padding: 30px 100px;
     }
 }
@@ -131,3 +131,8 @@ margin-bottom:10px
 @media screen and (max-width: 992px) {
 
 }
+
+/*.skin-1 .nav > li > a .ferhat{
+    color: #000 !important;
+    background-color:#e5e5e6 !important
+}*/
