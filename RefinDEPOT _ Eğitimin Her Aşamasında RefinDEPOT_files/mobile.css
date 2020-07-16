@@ -1,0 +1,520 @@
+@media screen and (max-width: 1185px) {
+    #nav-container {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1601px) {
+
+    #content {
+        float: initial;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bx-wrapper {
+        float: none;
+        max-width: 1920px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-slider {
+        background-color: #fbfbfb;
+    }
+
+    #footer-copyright {
+        height: 100px;
+    }
+
+    #nav-footer {
+        margin: 42px 0 0 0;
+    }
+
+    #text-copyright {
+        margin: 42px 0 0 0;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1496px) {
+
+    #main-content {
+        width: 80%;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    #sidebar-homepage-right {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #main-content {
+        width: 100%;
+        float: left;
+    }
+
+    #sidebar-homepage-right {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    #nav-sidebar {
+        width: 100%;
+        float: left;
+    }
+
+    #nav-sidebar li {
+        display: table-cell;
+        float: none;
+    }
+
+    #nav-sidebar li a {
+        text-align: center;
+    }
+
+    #nav-sidebar li a figure {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        padding: 0 60px;
+    }
+
+    #header-full{
+        height: 132px;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    #nav-sidebar li {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #content-principal {
+        padding-left: 0;
+        width: 100%;
+        float: left;
+    }
+
+    #intro-principal figure {
+        position: inherit;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        bottom: 0;
+    }
+
+    #intro-principal #title-principal {
+        background: #dadada;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #logo-footer {
+        width: 100%;
+        margin: 0;
+        float: left;
+        text-align: center;
+    }
+
+    #footer-copyright {
+        height: auto;
+    }
+
+    #footer-copyright-content {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #logo {
+        width: 40%;
+        float: left;
+        margin-top: 0;
+    }
+
+    #header-content {
+        width: 40%;
+        float: right;
+        margin-top: 23px;
+    }
+
+    #searchform {
+        margin-bottom: 15px;
+    }
+
+    #nav-header {
+        margin: 5px 0;
+    }
+
+    #nav-header li {
+        margin: 0;
+    }
+
+    #slogan {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #header-full {
+        float: left;
+        height: auto;
+    }
+
+    #main-header {
+        float: left;
+        height: auto;
+    }
+
+    #header {
+        height: auto;
+    }
+
+    .mobile-menu {
+        display: block !important;
+        width: 100%;
+        height: auto;
+        background-color: #7a1632;
+        color: #fff;
+        text-align: center;
+        float: left;
+        line-height: 40px;
+    }
+
+    .mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .mobil-menu-links {
+        display: none;
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+    }
+
+    .mobil-link {
+        list-style: none;
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobil-link li {
+        list-style: none;
+        width: 100%;
+        float: left;
+        color: #fff;
+    }
+
+    .mobil-link li a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .mobil-menu-links hr {
+        border: 1px solid #730e2a;
+        margin: 0 20px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    #content {
+        padding: 0 10px;
+    }
+
+    #banner-homepage {
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo img {
+        max-width: 170px;
+    }
+
+    #header-content {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #header-content {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #searchform {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 5px !important;
+    }
+
+    .search-div {
+        width: 221px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav-header {
+        float: right;
+    }
+
+    #slogan {
+        text-align: center;
+    }
+
+    #header-full {
+        float: left;
+        height: auto;
+    }
+
+    #header {
+        height: auto;
+    }
+
+    .slider-text {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    .slider-text span {
+        font-size: 20px;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+    }
+
+    .home-content-navigation {
+        padding: 0 20px;
+    }
+
+    .home-content-navigation-button a {
+        font-size: 11px;
+    }
+
+    .home-content-navigation {
+        height: 45px;
+    }
+
+    .home-content-navigation-button {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .kurum-header {
+        height: 40px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .slider-full-text .slider-thin {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .slider-full-text .slider-bold {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #content {
+        padding: 0 75px;
+    }
+
+    .intro-article figure {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .intro-article h1 {
+        text-align: center;
+    }
+
+    #nav-footer {
+        float: none;
+        width: 115px;
+        height: 150px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav-footer li {
+        float: left;
+        margin-top: 10px;
+    }
+
+    #text-copyright {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .career-button {
+        width: 100%;
+    }
+
+    .university {
+        padding: 1%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .bx-prev, .bx-next, .bx-pager {
+        display: none;
+    }
+
+    .university {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .slider-text {
+        width: 215px;
+        height: 77px;
+        padding: 6px;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #content {
+        padding: 10px;
+    }
+
+    .owl-carousel {
+        overflow: hidden;
+    }
+
+    #footer-copyright {
+        padding: 10px;
+    }
+
+    .comment-link {
+        font-size: 12px;
+    }
+
+    #header-full {
+        padding: 10px;
+    }
+
+    #main-header {
+        height: auto;
+    }
+
+    #header-content {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    #intro-principal figure {
+        width: 100%;
+    }
+
+    #blur-top {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #link-back-top {
+        float: none;
+    }
+
+    .home-content-navigation-button a {
+        font-size: 9px;
+    }
+
+    .slider-full-text {
+        padding: 10px;
+    }
+
+    .slider-thin {
+        font-size: 12px !important;
+    }
+
+    .slider-bold {
+        font-size: 11px !important;
+    }
+
+}
+
+@media (min-width: 911px) and (max-width: 1050px) {
+
+    #header-full {
+        padding: 0 60px;
+    }
+
+    #nav {
+        padding: 0 60px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+
+    #header-full {
+        padding: 0 12px;
+    }
+
+    #nav-header {
+        float: none;
+        display: inline-block;
+    }
+
+    #content {
+        padding: 0 20px;
+    }
+
+    #blur-top {
+        text-align: center;
+    }
+
+    #link-back-top {
+        float: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
