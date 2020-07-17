@@ -1,0 +1,62 @@
+#nav-sidebar li a img {
+    width:100%;
+    height:100%
+}
+
+
+#nav-sidebar li a figure {
+    border-radius: 50%;
+    padding: 0px;
+    width: 92px;
+    height: 92px;
+}
+
+.testimonial-title {
+    padding-left:15px !important;
+}
+
+@media screen and (max-width: 800px) {
+    #nav-footer {
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    #nav-footer li {
+        border:none;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+#nav-header{
+    float:right
+}
+
+.mobile-menuferhat{
+    display:none
+}
+
+.bx-viewportferhat{
+    width: 100%; overflow: hidden; position: relative; height: 545px;
+}
+
+.bxsliderferhat{
+    width: 5215%; position: relative; left: -1583px;
+}
+
+.bx-cloneferhat{
+    float: left; list-style: none; position: relative; width: 1583px; display: block; opacity: 0.103323;
+}
+
+
+.slider-textferhat{
+    background-color: rgb(122, 22, 50) !important; display: block;
+}
+
+
+.divsliderferhat{
+    float: left; list-style: none; position: relative; width: 1583px; display: block !important;
+}
