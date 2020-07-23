@@ -42,8 +42,9 @@ body{
     text-align: right;
 }
 #slogan {
-    font-size:1em;
+    font-size:16px;
     font-weight: 400;
+    margin-top:10px
 
 }
 
@@ -70,11 +71,6 @@ body{
     display:none;
 }
 
-#nav-container button{
-    display:none;
-}
-
-
 #nav-main{
     display:flex;
 }
@@ -96,11 +92,106 @@ body{
     margin-left: 150px;
 }
 
+
+/*      SLIDER       */
+
+#scontrols{
+    position: absolute;
+    display:block;
+    margin:auto;
+    padding-top:13%;
+    width: 100%;
+    max-width: 1350px;
+    min-width: 400px;
+}
+
+#scon{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#scon img{
+    z-index: 5;
+    cursor: pointer;
+    margin:0px 10px;
+    width:5vw;
+    min-width: 12px;
+    max-width: 60px;
+    height: 5vw;
+    min-height: 12px;
+    max-height: 60px;
+    }
+
+    #sliders{
+        display:block;
+        margin:auto;
+        width:100%;
+        max-width: 1350px;
+    }
+    
+    #slidemain{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    #slidepanel{
+       display:flex;
+       flex-direction:row;
+       position:relative;
+       width: 500%;
+       right: 0px;
+       transition: 1s;
+       -webkit-transition: 1s;
+       -moz-transition: 1s;
+       -ms-transition: 1s;
+       -o-transition: 1s;
+}
+
+    .divslider > img{
+
+        max-width: 100%;
+        margin:auto
+    }
+
+    .slider-text{
+        position: absolute;
+        background-color: #7a1934 ;
+        width:40%;
+        min-width: 300px;
+        max-width: 400px;
+        margin:1.2% 0 0 2%;
+        padding:10px;
+        opacity: .9;
+        color:white;
+        line-height: 1.5;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+.slider-text > span {
+    font-weight: bold;
+}
+
+.slider-text > p{
+    color:white;
+}
+
+
+
+    /*   ANASAYFA    */
+
 #body-content{
     display:flex;
     flex-wrap:wrap;
     max-width: 1350px;
-    
 }
 
 #main-content{
@@ -219,11 +310,13 @@ p .part2 {
     color: #A42347;
     font-size: 16px;
     }
-   
-#intro-principal{
-    width: 80%;
-    margin:auto;
-}
+
+.static-page1, #intro-principal1 {
+        width: 80%;
+        margin: auto;
+        padding:0;
+    }
+    
 
 #title-principal{
     background-color: #f3f3f3;
@@ -256,7 +349,13 @@ p .part2 {
 
 #yarali {
     margin-top: -100px;
-    float:left
+    float:left;
+}
+
+.yarali {
+    margin-top: -70px;
+    float:left;
+    width: 303px;
 }
 
 
@@ -268,8 +367,9 @@ p .part2 {
     width: 80%;
     font-size: 14px;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
+
 
 #aboutus h2{
     color:#7a1632;
@@ -291,11 +391,37 @@ p .part2 {
     display: block;
     margin:auto;
     width: 80%;
+}
 
+
+#refh2{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#videoc{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    margin:20px 0
 }
 
 #triangle{
-    background-color:#f3f3f3;
+    background-color:#f0f0f0;
+}
+
+.title-event{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.title-event a{
+    text-decoration: none;
+    color: inherit;
+    font-size:32px
 }
 
 #hidehide{
@@ -310,15 +436,18 @@ p .part2 {
     flex-wrap: wrap;
     width:300px;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-color: #dddddd;
     align-items: flex-start;
-    padding: 10px;
+    margin: 10px;
 }
 
+.event-container h4{
+    padding: 5px 0px;
+}
 
 .event-container a{
     text-decoration: none;
-    color: #1b181c;
+    color:#1b181c;
     font-size: 24px;
 }
 
@@ -328,27 +457,81 @@ p .part2 {
     width:300px
 }
 
+
+.event-container p{
+text-align: center;
+height: 45px;
+}
+
+
 .panel-event-info{
     min-height: 95px;
     background-color: #7a1632;
     color:white;
     width: 100%;
-    font-size: 20px;
-    padding:10px
+    font-size: 18px;
+    padding:10px;
+    height: 150px;
 }
+
 
 .panel-event-info li{
     list-style: none;
+    margin:5px
 }
 
 #hidehidep{
     font-size:20px;
     padding: 20px;
+    text-align: center;
 }
 
+#section1, #section4{
+    background-color: #7a1934;
+    margin:20px 0px;
+    color:white;
+    padding: 0px 10px;
+}
+
+#section1 h4, #section4 h4{
+    margin:10px
+}
+
+hr{
+    margin: 10px 0px;
+    width:100%
+}
+
+#section2, #section3, #section5{
+    background-color: #f0f0f0;
+    margin:20px 0px;
+    padding: 10px;
+    color:gray;
+    padding:10px;
+    line-height: 20px;
+}
+
+#section2 li, #section3 li, #section4 li, #section5 li{
+    margin-left: 20px;
+    padding: 5px;
+}
 
 /*RESUME*/
 
+#resume{
+    margin-bottom:150px
+}
+
+#resume h2{
+    padding:10px 0px;
+    text-align: center;
+}
+
+
+#section4 p {
+    color:white;
+    padding:10px
+}
 
 
 /*   CONTACT      */
@@ -361,12 +544,11 @@ p .part2 {
 #contact1{
     width: 100%;
 }
-.bxslider img, #map{
+#contact1 img, #map{
     display: block;
     margin: auto;
     max-width: 100%;
 }
-
 
 #iletisim{
     display: flex;
@@ -428,11 +610,12 @@ p .part2 {
 
 .bilgi img, .altbilgi img{
     height: 35px;
+    width: 35px;
     padding-right: 5px;
 }
 
 .altbilgi{
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .altbilgi h2{
@@ -442,7 +625,6 @@ p .part2 {
 .altbilgi div{
     display:flex;
     align-items: center;
-    padding-top: 30px;
 }
 #contact2{
     margin-bottom: 40px;
@@ -451,7 +633,15 @@ p .part2 {
 #blur-top{
     display: flex;
     justify-content: flex-end;
-    margin-top:-18px
+    margin-top:-18px;
+    margin-right: 10px;
+}
+
+#blur-top a{
+    text-decoration: none;
+    color:#7a1632;
+    font-weight: bold;
+
 }
 
 #footer-copyright{
@@ -461,6 +651,7 @@ p .part2 {
     padding:10px 180px;
     display:block;
     text-align: center;
+    position: relative;
 
 }
 
@@ -629,6 +820,17 @@ p .part2 {
         padding:17px 30px;
         margin-left: 150px;
     }
+
+    .slider-text{
+        position: absolute;
+        background-color: #7a1934 ;
+        width:10%;
+        min-width: 400px;
+        max-width: 19%;
+
+}
+
+
     #main-content {
         display: block;
         margin: 0;
@@ -652,7 +854,7 @@ p .part2 {
     }
 
 
-    #intro-principal {
+    .static-page1, #intro-principal1 {
         width: 100%;
         margin: auto;
         padding:0;
@@ -663,9 +865,12 @@ p .part2 {
         margin:auto;
         width:95%
     }
-    
 
-    #nav-footer{
+    #kisiler .bilgi{
+        margin-left: 50%;
+    }
+ 
+     #nav-footer{
         display:flex;
         flex-direction: column; 
         width:100%;
@@ -684,4 +889,48 @@ p .part2 {
     #text-copyright{
     text-align: center;
 }
+}
+
+@media (max-width:680px){
+
+
+    .slider-text{
+        position: absolute;
+        background-color: #7a1934 ;
+        width:94%;
+        min-width: 200px;
+        max-width: 300px;
+        font-size:12px;
+        margin:0 2%;
+
+}
+
+    #kisiler{
+        padding:20px 0 0 20px
+    }
+
+    #kisiler div{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:0px
+    }
+
+    #kisiler .bilgi{
+        position:relative;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 0px;
+    }
+}
+
+#aboutus, #referenceletter, #resume, #contact1, #contact2{
+    display:none;
+    max-width: 1350px;   
+}
+
+/*#slider1, #slider2, #slider3, #slider4,*/ #intro1, #intro2, #intro3, #intro4, #refmekkoc, #hidehide, #hidehidep, #refmekolc, #accordion1, #refletilc, #accordion2,
+#ozharefc, #accordion3, #cvilec,
+#accordion4, #ozsuc, #accordion5 {
+    display:none
 }
